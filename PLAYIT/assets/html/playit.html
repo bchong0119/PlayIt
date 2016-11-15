@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PlayIt</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/playit.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+	    <div class="row">
+		<div class="col-xs-1 navbar-text">
+		    <!-- TODO: Image for albumImage //-->
+		    <img id="albumImage" src="" class="img-rounded"/> 
+		</div>
+		<div class="col-xs-6 navbar-text song-information">
+		    <dl>
+		    <!-- TODO: Tag for trackName //-->
+		    <dt id="trackName">PlayIt</dt>
+		    <!-- TODO: Tag for albumName //-->
+		    <dd id="albumName"><em>Simple Music Player</em></dd>
+		    <!-- TODO: Tag for artistName //-->
+		    <dd id="artistName"><small>Powered by Python, SQLite, Bootstrap and jQuery</small></dd>
+		    </dl>
+		</div>
+		<div class="col-xs-3 navbar-text">
+		    <!-- TODO: Button for prevButton //-->
+		    <button id="prevButton" type="button" class="btn btn-success navbar-btn">
+		    <i class="fa fa-step-backward"></i>
+		    </button>
+		    <!-- TODO: Button for playButton //-->
+		    <button id="playButton" type="button" class="btn btn-success navbar-btn">
+		    <i class="fa fa-play"></i>
+		    </button>
+		    <!-- TODO: Button for nextButton //-->
+		    <button id="nextButton" type="button" class="btn btn-success navbar-btn">
+		    <i class="fa fa-step-forward"></i>
+		    </button>
+		    <!-- TODO: Audio for player //-->
+		    <audio id="player" onended="endSong()"></audio>
+		</div>
+	    </div>
+	</div>
+    </nav>
+
+    <!--// TODO: Add elements and identifiers for
+	1. notebook-nav
+	    - notebook-tabs
+	2. notebook-body
+	    - notebook-body-nav
+	    - notebook-body-contents
+    //-->
+
+<div class="container-fluid">
+	<!-- TODO: Division for notebook-nav //-->
+		<div id="notebook-nav">	
+			<ul class="nav nav-tabs">
+	
+	    <!-- TODO: Tabs for notebook-tabs //-->
+				<li role="presentation" id="search" class="active"><a>Search</a></li>
+				<li role="presentation" id="artists"><a href="#">Artists</a></li>
+				<li role="presentation" id="albums"><a href="#">Albums</a></li>
+				<li role="presentation" id="tracks"><a href="#">Tracks</a></li>
+				<li role="presentation" id="playlist"><a href="#">Playlist</a></li>
+			</ul>
+		</div>	
+
+	<!-- TODO: Division for notebook-body //-->
+	<div id="notebook-body">
+	    <!-- TODO: Division for notebook-body-nav //-->
+		<div id="notebook-body-nav">
+		</div>
+	    <!-- TODO: Division for notebook-body-contents //-->
+	<div id="notebook-body-contents">
+	</div>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--// TODO: Add source playit.js //-->
+    <script src="assets/js/playit.js"></script>
+</body>
+</html>

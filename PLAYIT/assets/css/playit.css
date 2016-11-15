@@ -1,0 +1,31 @@
+/* Sets top padding for fixed navigation bar */
+body { 
+    padding-top: 140px;
+}
+
+/* Sets albumImage size */
+#albumImage {
+    width:  64px;
+    height: 64px;
+}   
+
+/* Sets sets song information color */
+.song-information dl {
+    color:  white;
+}   
+
+/* Sets playlist image size */
+.playlist-image {
+    width:  64px;
+    height: 64px;
+}   
+
+/* Sets playlist cell vertical alignment */
+.table > tbody > tr > td {
+    vertical-align: middle;
+}   
+
+/* Sets playlist active cell font weight */
+.playlist-active {
+    font-weight: bold;
+}   
